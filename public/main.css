@@ -14,6 +14,20 @@ header {
   padding: 10px 20px 10px 20px;
 }
 
+.watch {
+  margin-left: 20px;
+}
+
+.watched-movie {
+  color: white;
+  background-color: black;
+}
+
+.unwatched-movie {
+  background-color: white;
+  color:violet
+}
+
 .search-bar-div {
   text-align: center;
 }
@@ -21,6 +35,15 @@ header {
 .seperator {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.add-movie-button {
+  background-color: chartreuse;
+}
+
+.search-button {
+  color: white;
+  background-color: darkblue;
 }
 
 .add-movie-div {
@@ -32,3 +55,4 @@ header {
   font-size: 25px;
   margin-top: 25px;
 }
+
