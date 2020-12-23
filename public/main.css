@@ -39,11 +39,13 @@ header {
 
 .add-movie-button {
   background-color: chartreuse;
+  margin-left: 20px;
 }
 
 .search-button {
   color: white;
   background-color: darkblue;
+  margin-left: 20px;
 }
 
 .add-movie-div {
@@ -54,5 +56,17 @@ header {
   text-align: center;
   font-size: 25px;
   margin-top: 25px;
+}
+
+.filter {
+  text-align: center;
+  margin: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  text-align: center;
 }
 

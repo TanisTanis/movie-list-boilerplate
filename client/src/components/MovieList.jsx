@@ -9,7 +9,7 @@ class MovieList extends React.Component {
   render() {
     return(
       this.props.movies.map((movie, index) => (
-        <MovieListItem movie={movie} key={movie + index}/>
+        <MovieListItem movie={movie} key={movie + index} switchWatched={this.props.switchWatched}/>
       ))
     )
   }

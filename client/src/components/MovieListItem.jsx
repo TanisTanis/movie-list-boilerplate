@@ -15,6 +15,7 @@ class MovieListItem extends React.Component {
     this.setState({
       watched: !this.state.watched
     });
+    this.props.switchWatched(event.target.name);
   }
 
   render() {
@@ -22,8 +23,8 @@ class MovieListItem extends React.Component {
     return (
       <div className="movie-title-div">
         <span className="movie-title">{this.props.movie.title}</span>
-        {!this.state.watched ? <button onClick={this.handleClick} className={className}>To watch</button> : null}
-        {this.state.watched ? <button onClick={this.handleClick} className={className}>Watched</button> : null}
+        {!this.state.watched ? <button onClick={this.handleClick} className={className} name={this.props.movie.title}>To watch</button> : null}
+        {this.state.watched ? <button onClick={this.handleClick} className={className} name={this.props.movie.title}>Watched</button> : null}
       </div>
     )
   }
